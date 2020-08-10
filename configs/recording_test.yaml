@@ -19,7 +19,7 @@ pages:
 
     - type: generic
       id: blindGrade
-      name: Blind grading phase
+      name: Blind Grading Phase - Part 2
       content: >         
         The aim of the blind grading phase is to rate the quality of each stimulus compared to a reference recording, under a number of specific criteria. Please note that the reference recording represents the most accurate representation of the original source signal that is presented, and you should base your quality judgements on how closely the test signals match the reference, under the following criteria. <br/><br/>
         Test Criteria and Attributes <br/><br/>
@@ -38,12 +38,12 @@ pages:
 
     - type: generic
       id: testStart
-      name:  Start of Test
+      name:  Start of Test - Part 2
       content: >  
-        This test contains 14 questions. Pressing "next" will take you to the first question of part one of this test, which contains 10 questions. <br/> <br/> 
+        Pressing "next" will take you to the first question of part two of this test, which contains 14 questions. <br/> <br/> 
         Once you are happy with your responses, click the "next" button to continue to the next page. You may press the back button to return to any previous test if needed.  <br/> <br/>
         Please note that at least one recording must be rated at 100 before you can proceed to the next page.
-        Please evaluate all recordings and not just the ones you deem to be of a high quality. Give each recording a fair score compared to the ideal recording i.e. the reference recording.
+        Please evaluate all recordings and not just the ones you deem to be of a high quality. Give each recording a fair score compared to the ideal recording i.e. the reference recording, in terms of the specific attribute being evaluated.
 
     - type: mushra
       id: Test 11
@@ -273,12 +273,18 @@ pages:
           - type: text
             label: eMail
             name: email
-          - type: number
-            label: Age
-            name: age
-            min: 0
-            max: 100
-            default: 20
+          - type: likert
+            name: Age Range
+            label: Age Range
+            response:
+             - value: <20
+               label: <20
+             - value: 20-30
+               label: 30-40
+             - value: 40-50
+               label: 50-60
+             - value: 60+
+               label: 60+
           - type: likert
             name: gender
             label: Gender
@@ -291,7 +297,7 @@ pages:
                label: Other
           - type: likert
             name: experience
-            label: Listening Test Experience
+            label: Experience with spatial audio and/or critical listening tests
             response:
              - value: none
                label: None
