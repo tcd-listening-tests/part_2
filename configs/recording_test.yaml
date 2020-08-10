@@ -12,7 +12,7 @@ pages:
       name: Welcome
       content: >
         Welcome back to the TCD Spatial Audio Listening Test <br/> <br/> 
-        Once the test is finished, please fill out the questionnaire and press submit, then copy and paste the results and send via email to <br/>
+        Once the test is finished, please fill out the questionnaire and press "Send results", then copy and paste the results and send via email to <br/>
         enda.bates@adaptcentre.ie <br/> <br/>
         You may take a break, or pull out from doing the test at any time if you wish to do so. <br/> <br/>
         The next page will contain the detailed instructions for the test. Please read this carefully before proceeding. <br/><br/><br/>
@@ -229,7 +229,7 @@ pages:
     - type: mushra
       id: Test 23
       name: TEST 23 - NATURALNESS/PRESENCE
-      content: Please rate the test signals from 0-100 in terms of how closely the perceived timbre (i.e. the timbral quality, tone colour bright-dark, full-thin, and coloration) of the source matches the timbre of the given reference. A rating of 100 indicates that the timbre of the test signal is identical to the timbre of the given reference.
+      content:  How closely the perceived naturalness of the scene and the degree to which you feel physically present in the scene, matches that of the given reference.
       showWaveform: true
       randomize: true
       enableLooping: true 
@@ -244,7 +244,7 @@ pages:
     - type: mushra
       id: Test 24
       name: TEST 24 - NATURALNESS/PRESENCE
-      content: Please rate the test signals from 0-100 in terms of how closely the perceived timbre (i.e. the timbral quality, tone colour bright-dark, full-thin, and coloration) of the source matches the timbre of the given reference. A rating of 100 indicates that the timbre of the test signal is identical to the timbre of the given reference.
+      content:  How closely the perceived naturalness of the scene and the degree to which you feel physically present in the scene, matches that of the given reference.
       showWaveform: true
       randomize: true
       enableLooping: true 
@@ -262,7 +262,7 @@ pages:
       content: >         
         Before pressing "next" on this page, please ensure that you have rated every recording, and that at least one recording per test has a rating of 100. <br/><br/>
         Once you press "next" you will not be able to go back. Pressing next will bring you to a quick questionnaire, please fill out every section. <br/>  <br/>
-        Once the questionnaire has been completed, please press the "Submit results" button, which will display results on screen. Please copy these results, and send them in an email to <br/><br/>
+        Once the questionnaire has been completed, please press the "Send results" button, which will display results on screen. Please copy these results, and send them in an email to <br/><br/>
         enda.bates@adaptcentre.ie.  
 
     - type: finish
@@ -281,8 +281,12 @@ pages:
              - value: <20
                label: <20
              - value: 20-30
+               label: 20-30
+             - value: 30-40
                label: 30-40
              - value: 40-50
+               label: 40-50
+             - value: 50-60
                label: 50-60
              - value: 60+
                label: 60+
